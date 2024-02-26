@@ -1,0 +1,65 @@
+import pyautogui
+import time
+
+
+# n번 반복
+n = 1621
+for _ in range(n):
+    # 1. DaqView 열기 버튼으로 이동 및 클릭
+    pyautogui.moveTo(72,706, 2)
+    pyautogui.click(72,706)
+
+    # 2. 첫번째 파일 클릭
+    pyautogui.moveTo(825,239, 2)
+    pyautogui.click(825,239)
+
+    # 3. 첫번째 파일 열기
+    pyautogui.moveTo(1191,484, 2)
+    pyautogui.click(1191,484)
+
+    # 4. 데이터 2개 선택
+    pyautogui.moveTo(98,821, 2)
+    pyautogui.click(98,821)
+
+    # 5. 파일 선택
+    pyautogui.moveTo(64,683, 2)
+    pyautogui.click(64,683)
+
+    # 5. 데이터 추출
+    pyautogui.moveTo(118,744, 2)
+    pyautogui.click(118,744)
+
+    # 6. 확인
+    pyautogui.moveTo(564,934, 2)
+    pyautogui.click(564,934)
+
+    # 7. DAQ클릭
+    pyautogui.moveTo(899,508, 2)
+    pyautogui.click(899,508)
+    pyautogui.moveTo(941,526, 2)
+    pyautogui.click(941,526)
+
+    # 8. 첫번째 파일선택
+    pyautogui.moveTo(854,238, 2)
+    pyautogui.click(854,238)
+
+    # 9. 파일 형식 선택(csv)
+    pyautogui.moveTo(915,510, 2)
+    pyautogui.click(915,510)
+    pyautogui.moveTo(987,535, 2)
+    pyautogui.click(987,535)
+
+    # 10. 저장버튼 클릭
+    pyautogui.moveTo(1189,479, 2)
+    pyautogui.click(1189,479)
+
+    # 11. 변환전 Data Drag
+    pyautogui.moveTo(171,126, 2)
+    pyautogui.dragTo(397,152, 2)
+
+    # 12. 변환후 Data Drag
+    pyautogui.dragTo(1346,242, 2)
+
+    # 13. daq view 화면 띄우기
+    pyautogui.moveTo(651,1066, 2)
+    pyautogui.click(651,1066)
